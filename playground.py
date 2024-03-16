@@ -21,9 +21,9 @@
 
 class Car:
     def __init__(self, **kwargs):
-        self.make = kwargs["make"]
-        self.model = kwargs["model"]
-        self.year = kwargs["year"]
+        self.make = kwargs.get("make")
+        self.model = kwargs.get("model")
+        self.year = kwargs.get("year")
 
     def car_info(self):
         print(f"Car is {self.make} {self.model}")
@@ -31,3 +31,6 @@ class Car:
 
 my_car = Car(make="BMW", model="X3", year=2022)
 my_car.car_info()
+
+my_new_car = Car(make="Nissan")
+my_new_car.car_info()
