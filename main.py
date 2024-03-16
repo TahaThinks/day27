@@ -1,7 +1,5 @@
 from tkinter import *
 
-def button_clicked():
-    print("I got clicked")
 
 # Default Settings
 window = Tk()
@@ -12,8 +10,8 @@ window.minsize(width=500, height=300)
 my_label = Label(text="I am a Label", font=("Arial", 24, "bold"))
 my_label.pack()
 
-my_label["text"] = "New Text Access by Key"
-my_label.config(text="New Text Access by Config")
+def button_clicked():
+    my_label.config(text="I Got Clicked")
 
 button = Button(text="Click Me", command=button_clicked)
 button.pack()
