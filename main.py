@@ -6,7 +6,7 @@ window.title("Taha First GUI Program")
 window.minsize(width=500, height=300)
 
 # Add a Label then Pack it
-my_label = Label(text="I am a Label", font=("Arial", 24, "bold"))
+my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
 my_label.pack()
 
 
