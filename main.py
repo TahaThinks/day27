@@ -12,7 +12,7 @@ my_label.pack()
 
 # Change Label based on the User Input
 def button_clicked():
-    my_label.config(text="Button Got Clicked")
+    my_label.config(text=user_input.get())
 
 
 # Tkinter Entry Field
