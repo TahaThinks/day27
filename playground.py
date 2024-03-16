@@ -18,19 +18,19 @@
 #
 # calculate(5, add=3, multiply=5)
 
-
-class Car:
-    def __init__(self, **kwargs):
-        self.make = kwargs.get("make")
-        self.model = kwargs.get("model")
-        self.year = kwargs.get("year")
-
-    def car_info(self):
-        print(f"Car is {self.make} {self.model}")
-
-
-my_car = Car(make="BMW", model="X3", year=2022)
-my_car.car_info()
-
-my_new_car = Car(make="Nissan")
-my_new_car.car_info()
+# Class using Keyword Argument
+# class Car:
+#     def __init__(self, **kwargs):
+#         self.make = kwargs.get("make")
+#         self.model = kwargs.get("model")
+#         self.year = kwargs.get("year")
+#
+#     def car_info(self):
+#         print(f"Car is {self.make} {self.model}")
+#
+#
+# my_car = Car(make="BMW", model="X3", year=2022)
+# my_car.car_info()
+#
+# my_new_car = Car(make="Nissan")
+# my_new_car.car_info()
