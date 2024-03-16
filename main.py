@@ -11,12 +11,10 @@ my_label = Label(text="I am a Label", font=("Arial", 24, "bold"))
 my_label.pack()
 
 def button_clicked():
-    my_label.config(text="I Got Clicked")
+    my_label.config(text="Button Got Clicked")
 
 button = Button(text="Click Me", command=button_clicked)
 button.pack()
-
-
 
 # Keep the Window Open
 window.mainloop()
