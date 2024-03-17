@@ -14,15 +14,18 @@ window.minsize(width=500, height=300)
 # Add a Label then Pack it
 my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
 # my_label.pack()
-my_label.place(x=100, y=200)
-
-# Tkinter Entry Field
-user_input = Entry(width=18)
-# user_input.pack()
+# my_label.place(x=100, y=200)
+my_label.grid(column=0, row=0)
 
 # Tkinter Button Module
 button = Button(text="Click Me", command=button_clicked)
 # button.pack()
-
+button.grid(column=1, row=1)
 # Keep the Window Open
+
+# Tkinter Entry Field
+user_input = Entry(width=18)
+# user_input.pack()
+user_input.grid(column=2, row=3)
+
 window.mainloop()
