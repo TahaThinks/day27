@@ -1,5 +1,11 @@
 from tkinter import *
 
+
+# Change Label based on the User Input
+def button_clicked():
+    my_label.config(text=user_input.get())
+
+
 # Default Settings
 window = Tk()
 window.title("Taha First GUI Program")
@@ -8,12 +14,6 @@ window.minsize(width=500, height=300)
 # Add a Label then Pack it
 my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
 my_label.pack()
-
-
-# Change Label based on the User Input
-def button_clicked():
-    my_label.config(text=user_input.get())
-
 
 # Tkinter Entry Field
 user_input = Entry(width=18)
