@@ -1,40 +1,33 @@
+# Project Miles to KM Converter
 from tkinter import *
 
+def Miles_to_KM():
+    miles = new_entry.get()
+    km = int(miles)*1.6
+    value.config(text=km)
 
-# Change Label based on the User Input
-def button_clicked():
-    my_label.config(text=user_input.get())
-
-
-# Default Settings
 window = Tk()
-window.title("Taha First GUI Program")
-window.minsize(width=500, height=300)
-window.config(padx=100, pady=200)
+window.minsize(width=200, height=200)
+window.title("Mile to Km Converter")
+window.config(padx=100, pady=100)
 
+# First Row
+new_entry = Entry(width=18)
+new_entry.grid(column=1, row=0)
+miles_label = Label(text="Miles")
+miles_label.grid(column=2, row=0)
 
-# Add a Label then Pack it
-my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
-# my_label.pack()
-# my_label.place(x=100, y=200)
-my_label.grid(column=0, row=0)
-my_label.config(padx=50, pady=50)
+# Second Row
+isequal_label = Label(text="is equal to")
+isequal_label.grid(column=0, row=1)
+value = Label(text="0")
+value.grid(column=1, row=1)
+unit = Label(text="Km")
+unit.grid(column=2, row=1)
 
-new_button = Button(text="Hey")
-new_button.grid(column=2, row=0)
-
-# Tkinter Button Module
-button = Button(text="Click Me", command=button_clicked)
-# button.pack()
-button.grid(column=1, row=1)
-# Keep the Window Open
-
-# Tkinter Entry Field
-user_input = Entry(width=18)
-# user_input.pack()
-user_input.grid(column=3, row=3)
-
-
+# Third Row
+button = Button(text="Calculate", command=Miles_to_KM)
+button.grid(column=1, row=2)
 
 
 window.mainloop()
