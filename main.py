@@ -8,12 +8,12 @@ def Miles_to_KM():
 
 
 window = Tk()
-window.minsize(width=200, height=200)
+# window.minsize(width=200, height=200)
 window.title("Mile to Km Converter")
-window.config(padx=100, pady=100)
+window.config(padx=20, pady=20)
 
 # First Row
-new_entry = Entry(width=18)
+new_entry = Entry(width=7)
 new_entry.grid(column=1, row=0)
 miles_label = Label(text="Miles")
 miles_label.grid(column=2, row=0)
