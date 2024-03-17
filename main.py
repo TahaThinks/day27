@@ -10,6 +10,8 @@ def button_clicked():
 window = Tk()
 window.title("Taha First GUI Program")
 window.minsize(width=500, height=300)
+window.config(padx=100, pady=200)
+
 
 # Add a Label then Pack it
 my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
@@ -29,7 +31,7 @@ button.grid(column=1, row=1)
 # Tkinter Entry Field
 user_input = Entry(width=18)
 # user_input.pack()
-user_input.grid(column=2, row=3)
+user_input.grid(column=3, row=3)
 
 
 
