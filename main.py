@@ -18,6 +18,7 @@ my_label = Label(text="Default Text", font=("Arial", 24, "bold"))
 # my_label.pack()
 # my_label.place(x=100, y=200)
 my_label.grid(column=0, row=0)
+my_label.config(padx=50, pady=50)
 
 new_button = Button(text="Hey")
 new_button.grid(column=2, row=0)
